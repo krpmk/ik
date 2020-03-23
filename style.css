@@ -1,0 +1,475 @@
+/*reset css*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/***********/
+
+body {
+    font-family: arial;
+}
+
+div.up-line {
+    background-color: #d9c6a1;
+    height: 5px;
+    width: 100%;
+    clear: both;
+}
+
+div.back-left-main {
+    background: url(img/dots.png) repeat;
+    position: absolute;
+    z-index: 10;
+    width: 50%;
+    height: 369px;
+    top: 430px;;
+    left: 0; 
+}
+
+div.back-left {
+    background: url(img/dots.png) repeat-x;
+    position: absolute;
+    z-index: 10;
+    width: 50%;
+    height: 327px;
+    top: 430px;;
+    left: 0; 
+}
+
+div.back-right {
+    background: url(img/dots.png) repeat-x;
+    position: absolute;
+    z-index: 10;
+    width: 50%;
+    height: 355px;
+    top: 75px;;
+    right: 0; 
+}
+
+div.back-right2 {
+    background: url(img/dots.png) repeat-x;
+    position: absolute;
+    z-index: 10;
+    width: 50%;
+    height: 26px;
+    top: 75px;;
+    right: 0; 
+}
+
+div.wrapper {
+    width: 990px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 100;
+}
+
+div.logo {
+    float: left;
+    height: 70px;
+    width: 367px;
+    background-color: #ffffff;
+    text-align: center;
+    line-height: 70px;
+}
+
+div.logo img {
+    vertical-align: bottom;    
+}
+
+nav {
+    float: right;
+    height: 67px;
+}
+
+nav ul {
+    display: block;
+}
+
+nav ul li {
+    margin: 0 30px;
+    float: right;
+}
+
+nav ul a:hover {
+    height: 67px;
+    border-bottom: 3px #ed834e solid;
+    display: block;
+}
+
+a.active {
+    border-bottom: 3px #ed834e solid;
+    display: block;
+    height: 67px;
+}
+
+div.main-up {
+    height: 355px;
+    clear: both;
+    position: relative;
+}
+
+div.main-up-left {
+    width: 397px;
+    height: 100%;
+    float: left;
+    background: url('img/main-up-back.png') bottom no-repeat;
+    position: absolute;
+    z-index: 2;
+}
+
+div.main-up-left h1 {
+    margin-top: 26px;
+}
+
+div.main-up-left p {
+    color: #ffffff;
+    padding-left: 30px;
+    padding-right: 55px;
+    padding-top: 25px;
+    font-size: 11px;
+    font-weight: bold;
+    line-height: 16px;
+}
+
+div.more {
+    padding-left: 30px;
+    line-height: 60px;
+}
+
+div.more a {
+    position: relative;
+    top: 7px;
+    left: 23px;
+}
+
+div.main-up-right {
+    width: 623px;
+    height: 100%;
+    float: right;
+    background: url('img/dots.png');
+    position: relative;
+    z-index: 1;
+    line-height: 355px;
+}
+
+div.main-up-right img {
+    vertical-align: bottom;
+}
+
+div.main-down {
+    background-color: #ffffff;
+    height: 368px;
+    width: 990px;
+    clear: both;
+}
+
+div.kontakt {
+    width: 180px;
+    float: left;
+    margin-top: 39px;
+    margin-left: 30px;
+    color: #636363;
+    font-size: 13px;
+    line-height: 20px;
+}
+
+div.kontakt p {
+    padding: 10px 0;
+}
+
+div.godziny {
+    width: 248px;
+    height: 327px;
+    float: left;
+    margin-top: 39px;
+    margin-left: 40px;
+    color: #636363;
+    font-size: 13px;
+    line-height: 20px;
+    position: relative;
+}
+
+div.godziny p {
+    padding: 10px 0;
+}
+
+div.godziny p.hours {
+    font-size: 30px;
+}
+
+div.godziny > img {
+    position: absolute;
+    bottom: 0;
+}
+
+div.mapa {
+    float: right;
+    padding-top: 39px;
+}
+
+footer {
+    height: 68px;
+    border-bottom: #eae9e9 solid 1px;
+    border-top: #eae9e9 solid 1px;
+    line-height: 68px;
+    color: #5c5c5c;
+    font-size: 9px;
+    clear: both;
+}
+
+footer p {
+    float: left;
+    padding-left: 10px;
+}
+
+div.nav-foot {
+    float: right;
+}
+
+footer ul {
+    display: block;
+}
+
+footer ul li {
+    margin: 0 10px;
+    float: right;
+}
+
+footer a {
+    text-decoration: none;
+    color: inherit;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+span.bold {
+    font-weight: bold;
+}
+
+span.underline {
+    text-decoration: underline;
+}
+
+div.main {
+    min-height: 682px;
+    position: relative;
+    clear: both;
+    background: #ffffff;
+}
+
+div.back-dots-wrap {
+    clear: both;
+    height: 26px;
+    width: 100%;
+}
+
+div.back-dots {
+    height: 100%;
+    width: 623px;
+    float: right;
+    background: url('img/dots.png');
+}
+
+div.main-left {
+    float: left;
+}
+
+div.main-right {
+    width: 623px;
+    min-height: 656px;
+    float: right;
+}
+
+div.godziny2 {
+    width: 248px;
+    float: right;
+    margin-top: 39px;
+    margin-left: 40px;
+    color: #636363;
+    font-size: 13px;
+    line-height: 20px;
+}
+
+div.godziny2 p {
+    padding: 10px 0;
+}
+
+div.mapa2 {
+    clear: both;
+    position: relative;
+    left: 20px;
+}
+
+div.mapa2 img {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+div.main-right > h1 > img {
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+
+div.main-right > p {
+    color: #636363;
+    font-size: 12px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 30px;
+    line-height: 15px;
+    text-align: justify;
+}
+
+div.main-right > ul {
+    color: #636363;
+    font-size: 11px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 30px;
+    line-height: 15px;
+}
+
+div.main-right a {
+    color: #636363;
+    text-decoration: underline;
+}
+
+div.main-right a:hover {
+    text-decoration: none;
+}
+
+div.main-down div.kontakt a {
+    color: #636363;
+    text-decoration: underline;
+}
+
+div.main-down div.kontakt a:hover {
+    text-decoration: none;
+}
+
+div.kontakt > p > img {
+    margin: auto;
+    display: block;
+}
+
+h1.kanc {
+    padding-top: 9px;
+}
+
+h1.czynn {
+    padding-top: 2px;
+}
+
+div.close-btn {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+}
+
+.popup {
+    width: 400px;
+    padding: 15px;
+    margin: auto;
+    font-size: 12px;
+}
+
+.popup h1 {
+    color: #ed834e;
+    font-size: 18px;
+    margin-bottom: 25px;
+    float: left;
+}
+
+.popup .print {
+    float: left;
+    margin: 5px 0 0 10px;    
+}
+
+.popup .print a {
+    font-size: 11px;
+    color: #6c6c6c;
+    text-decoration: none;
+}
+
+.popup .print a:hover {
+    text-decoration: underline;
+}
+
+.popup ol {
+    list-style: lower-alpha;
+    padding: 0 15px;
+    clear: both;
+}
+
+.popup ul {
+    list-style: disc;
+    padding: 0 15px;
+}
+
+.popup li {
+    margin: 10px 0;
+}
+
+.popup-foot {
+    text-align: center;
+    margin: 30px auto 15px;
+}
+
+.phone-margin {
+    margin-left: 12px;
+}
+
+span.wykaz{
+	text-decoration: none;
+}
+
+.justify {
+	text-align: justify;
+}
